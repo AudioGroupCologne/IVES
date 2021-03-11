@@ -11,7 +11,7 @@ The toolbox was implemented in Max 8 (v.8.1.10) and requires additonal libraries
 installed for IVES to work: 
 
 - [Spat 5](https://forum.ircam.fr/projects/detail/spat/) (Spatial audio library by IRCAM)
-- [VR](https://github.com/worldmaking/vr) (VR library, can be installed via the Max Package Manager. Only needed for use with PC-VR hardware.)
+- [VR](https://github.com/worldmaking/vr) (VR library, can also be installed via the Max Package Manager. Only needed for use with PC-VR hardware.)
 
 
 <br>
