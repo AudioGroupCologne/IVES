@@ -12,7 +12,7 @@ installed for IVES to work:
 
 - [Spat 5](https://forum.ircam.fr/projects/detail/spat/) (Spatial audio library by IRCAM)
 - [VR](https://github.com/worldmaking/vr) (VR library, can also be installed via the Max Package Manager. Only needed for use with PC-VR hardware.)
-
+- [cv.jit](CV library for jitter, can be installed via the Max Package Manager. Only needed for use with Bose AR module ives.mt.bose_ar.)
 
 <br>
 
@@ -27,6 +27,16 @@ Make sure the required dependencies are installed correctly.
 
 The IVES modules are implemented as Max clippings. Paste them to your Max patcher window with right-click -> Paste From -> IVES -> *choose your module* 
 
+
+<br>
+
+
+## Open Source Notice
+
+- [ives.mt.bose_ar] includes the Bose AR Web SDK: [Bose AR WebSDK](https://github.com/zakaton/Bose-Frames-Web-SDK)
+
+- [ives.ai.agent] is based on Steering Behavior code from Daniel Shiffman[1](https://github.com/nature-of-code/noc-examples-processing/tree/master/chp06_agents), [2](https://thecodingtrain.com/tracks/the-nature-of-code-2/noc/5-autonomous-agents/1-steering-agents), originally based on Craig Reynolds Steering Behaviors [3](https://www.red3d.com/cwr/steer/)
+and includes the [P5js](https://www.p5js.org) framework.
 
 <br>
 
