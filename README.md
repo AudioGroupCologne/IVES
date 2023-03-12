@@ -42,6 +42,9 @@ and includes the [P5js](https://www.p5js.org) framework.
 
 ## Additional Information
 
+### See and cite corresponding publication:
+
+Damian Dziwis, Johannes M. Arend, Tim Lübeck, & Christoph Pörschmann. (2021, June 29). IVES – Interactive Virtual Environment System: A Modular Toolkit for 3D Audiovisual Composition in Max. 18th Sound and Music Computing Conference (SMC 2021), Virtual. https://doi.org/10.5281/zenodo.5042970
 
 ### All patches in this repository are licensed under the GNU v3 [ license ](LICENSE.md). 
 
