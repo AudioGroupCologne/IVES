@@ -22,7 +22,7 @@ var del = p.getnamed("del1");
 var bng = p.getnamed("bng1");
 var thr = p.getnamed("thru");
 var thr2 = p.getnamed("thru2");
-var pak = p.getnamed("pak2");
+//var pak = p.getnamed("pak2");
 var out = p.getnamed("out3");
 
 
@@ -181,6 +181,7 @@ function deleteObjs(){
 			
 	} 
 	
+	/*
 	for(var i = 0; i<inpNumber;i++){
 	
 		var mtx = p.getnamed("mtx["+i+"]");
@@ -192,6 +193,7 @@ function deleteObjs(){
 
 			
 	}
+	*/
 	
 
 	
@@ -224,6 +226,8 @@ function changeReflections(){
 	pak.setattr("varname","pak1");
 		
 	p.connect(pak,0,com,1);
+	p.connect(pak,0,out,0);
+
 	var sourcePos = 0;
 	var wallPos = 1;
 	
@@ -252,8 +256,8 @@ function changeReflections(){
 		p.connect(matt,0,mat,1);
 		p.connect(gain,0,mat,2);
 
-		var mtx = p.getnamed("mtx["+sourcePos+"]");
-		p.connect(mat,0,mtx,(wallPos-1));		
+		//var mtx = p.getnamed("mtx["+sourcePos+"]");
+		//p.connect(mat,0,mtx,(wallPos-1));		
 
 		var inp = p.newdefault(((i)*60),10,"thru");
 		inp.setattr("varname","in["+i+"]");
@@ -287,16 +291,17 @@ function onChange(){
  	bng = p.getnamed("bng1");
  	thr = p.getnamed("thru");
  	thr2 = p.getnamed("thru2");
-	pak = p.getnamed("pak2");
+	//pak = p.getnamed("pak2");
 	out = p.getnamed("out3");
 	
-	p.remove(pak);	
+	//p.remove(pak);	
 		
- 	pak = p.newdefault(346, 657, "mc.pack~", inpNumber);
-	pak.setattr("varname","pak2");
-	p.connect(pak,0,out,0);
+		
+ 	//pak = p.newdefault(346, 657, "mc.pack~", inpNumber);
+	//pak.setattr("varname","pak2");
+	//p.connect(pak,0,out,0);
 	
-	
+	/*
 	if(wallNumber > 0){
 		
 		for(var i=0; i<inpNumber;i++){
@@ -314,7 +319,7 @@ function onChange(){
 
 		}
 	}	
-	
+	*/
 	changeInput();
 	changeReflections();
 		
