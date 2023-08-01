@@ -661,12 +661,10 @@ function onChange(){
 	var A_mi = 0;
 	var A_hi = 0;
 
-	var S = 0;
 	
 	if(floor == 1){
 		
 		A += (floor_area * floor_coef);
-		S += floor_area;
 
 		A_lo += (floor_area * floor_lo_coef);
 		A_mi += (floor_area * floor_mi_coef);
@@ -678,8 +676,6 @@ function onChange(){
 	if(left == 1){
 	
 		A += (left_area * left_coef);
-		S += left_area;
-
 	
 		A_lo += (left_area * left_lo_coef);
 		A_mi += (left_area * left_mi_coef);
@@ -690,8 +686,6 @@ function onChange(){
 	if(right == 1){
 
 		A += (right_area * right_coef);
-		S += right_area;
-
 		
 		A_lo += (right_area * right_lo_coef);
 		A_mi += (right_area * right_mi_coef);
@@ -701,8 +695,6 @@ function onChange(){
 	if(front == 1){
 		
 		A += (front_area * front_coef);
-		S += front_area;
-
 	
 		A_lo += (front_area * front_lo_coef);
 		A_mi += (front_area * front_mi_coef);
@@ -713,8 +705,6 @@ function onChange(){
 	if(back == 1){
 	
 		A += (back_area * back_coef);
-		S += back_area;
-
 
 		A_lo += (back_area * back_lo_coef);
 		A_mi += (back_area * back_mi_coef);
@@ -724,8 +714,6 @@ function onChange(){
 	if(ceiling == 1){
 
 		A += (ceiling_area * ceiling_coef);
-		S += ceiling_area;
-
 	
 		A_lo += (ceiling_area * ceiling_lo_coef);
 		A_mi += (ceiling_area * ceiling_mi_coef);
@@ -733,10 +721,10 @@ function onChange(){
 		
 	}
 	
-	rt60 =     0.161 * room_volume / (-Math.log(1-(A/S)) * S);
-	rt60_lo =  0.161 * room_volume / (-Math.log(1-(A_lo/S)) * S);
-	rt60_mi =  0.161 * room_volume / (-Math.log(1-(A_mi/S)) * S);
-	rt60_hi =  0.161 * room_volume / (-Math.log(1-(A_hi/S)) * S);
+	rt60 =     0.161 * room_volume / A;
+	rt60_lo =  0.161 * room_volume / A_lo;
+	rt60_mi =  0.161 * room_volume / A_mi;
+	rt60_hi =  0.161 * room_volume / A_hi;
 
 	
 	if(isFinite(rt60_lo)){ 
