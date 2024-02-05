@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -59,8 +59,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -96,18 +96,25 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 564.5, -166.5, 149.0, 22.0 ],
+									"text" : "spat5.osc.route /object/pth"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-75",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1699.5, 439.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/ani"
+									"patching_rect" : [ 1699.5, 439.0, 149.0, 22.0 ],
+									"text" : "spat5.osc.route /object/ani"
 								}
 
 							}
@@ -118,13 +125,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1519.5, 439.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/shw"
+									"patching_rect" : [ 1519.5, 439.0, 154.0, 22.0 ],
+									"text" : "spat5.osc.route /object/shw"
 								}
 
 							}
@@ -135,13 +137,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1172.5, 439.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/enb"
+									"patching_rect" : [ 1172.5, 439.0, 153.0, 22.0 ],
+									"text" : "spat5.osc.route /object/enb"
 								}
 
 							}
@@ -152,13 +149,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1345.5, 439.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/lit"
+									"patching_rect" : [ 1345.5, 439.0, 141.0, 22.0 ],
+									"text" : "spat5.osc.route /object/lit"
 								}
 
 							}
@@ -169,31 +161,20 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1172.5, -158.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/color"
+									"patching_rect" : [ 1172.5, -158.0, 159.0, 22.0 ],
+									"text" : "spat5.osc.route /object/color"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-164",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1568.0, 204.0, 166.0, 36.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/animrate"
+									"patching_rect" : [ 1568.0, 204.0, 179.0, 22.0 ],
+									"text" : "spat5.osc.route /object/animrate"
 								}
 
 							}
@@ -204,13 +185,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1943.0, 116.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/id"
+									"patching_rect" : [ 1943.0, 116.0, 142.0, 22.0 ],
+									"text" : "spat5.osc.route /object/id"
 								}
 
 							}
@@ -221,31 +197,20 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1756.0, 204.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/pnt"
+									"patching_rect" : [ 1756.0, 204.0, 149.0, 22.0 ],
+									"text" : "spat5.osc.route /object/pnt"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-169",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1381.0, 204.0, 166.0, 36.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/matmod"
+									"patching_rect" : [ 1381.0, 204.0, 176.0, 22.0 ],
+									"text" : "spat5.osc.route /object/matmod"
 								}
 
 							}
@@ -256,13 +221,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1194.0, 184.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/scl/z"
+									"patching_rect" : [ 1194.0, 184.0, 157.0, 22.0 ],
+									"text" : "spat5.osc.route /object/scl/z"
 								}
 
 							}
@@ -273,13 +233,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1194.0, 157.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/scl/y"
+									"patching_rect" : [ 1194.0, 157.0, 157.0, 22.0 ],
+									"text" : "spat5.osc.route /object/scl/y"
 								}
 
 							}
@@ -290,13 +245,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1194.0, 125.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/scl/x"
+									"patching_rect" : [ 1194.0, 125.0, 157.0, 22.0 ],
+									"text" : "spat5.osc.route /object/scl/x"
 								}
 
 							}
@@ -307,13 +257,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 967.0, 184.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/pos/z"
+									"patching_rect" : [ 967.0, 184.0, 161.0, 22.0 ],
+									"text" : "spat5.osc.route /object/pos/z"
 								}
 
 							}
@@ -324,13 +269,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 967.0, 157.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/pos/y"
+									"patching_rect" : [ 967.0, 157.0, 161.0, 22.0 ],
+									"text" : "spat5.osc.route /object/pos/y"
 								}
 
 							}
@@ -341,13 +281,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 967.0, 125.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/pos/x"
+									"patching_rect" : [ 967.0, 125.0, 161.0, 22.0 ],
+									"text" : "spat5.osc.route /object/pos/x"
 								}
 
 							}
@@ -358,13 +293,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 739.5, 184.0, 161.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/rot/z"
+									"patching_rect" : [ 739.5, 184.0, 156.0, 22.0 ],
+									"text" : "spat5.osc.route /object/rot/z"
 								}
 
 							}
@@ -375,13 +305,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 739.5, 157.0, 161.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/rot/y"
+									"patching_rect" : [ 739.5, 157.0, 156.0, 22.0 ],
+									"text" : "spat5.osc.route /object/rot/y"
 								}
 
 							}
@@ -392,13 +317,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 739.5, 125.0, 161.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/rot/x"
+									"patching_rect" : [ 739.5, 125.0, 156.0, 22.0 ],
+									"text" : "spat5.osc.route /object/rot/x"
 								}
 
 							}
@@ -409,13 +329,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 495.0, 184.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/poly/y"
+									"patching_rect" : [ 495.0, 184.0, 164.0, 22.0 ],
+									"text" : "spat5.osc.route /object/poly/y"
 								}
 
 							}
@@ -426,13 +341,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 495.0, 148.0, 166.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "spat5.osc.route /model/poly/x"
+									"patching_rect" : [ 495.0, 148.0, 164.0, 22.0 ],
+									"text" : "spat5.osc.route /object/poly/x"
 								}
 
 							}
@@ -1273,11 +1183,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 381.5, 378.0, 143.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
 									"text" : "spat5.osc.route /material",
 									"varname" : "rte2[1]"
 								}
@@ -1291,10 +1196,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, -40.0, 140.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0
-									}
-,
 									"text" : "spat5.osc.change"
 								}
 
@@ -2096,11 +1997,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 94.0, 485.5, 100.0, 36.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
 									"text" : "spat5.osc.route /xyz"
 								}
 
@@ -2127,10 +2023,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 94.0, 456.5, 100.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0
-									}
-,
 									"text" : "spat5.converter"
 								}
 
@@ -2329,11 +2221,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 215.0, 180.0, 143.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
 									"text" : "spat5.osc.route /source/0",
 									"varname" : "rte2"
 								}
@@ -2347,11 +2234,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 180.0, 139.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
 									"text" : "spat5.osc.route /object/0",
 									"varname" : "rte1"
 								}
@@ -2369,7 +2251,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-153", 0 ],
-									"order" : 18,
+									"order" : 19,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -2377,7 +2259,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-154", 0 ],
-									"order" : 19,
+									"order" : 20,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -2505,7 +2387,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
-									"order" : 20,
+									"order" : 21,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -2522,6 +2404,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-75", 0 ],
 									"order" : 2,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"order" : 18,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -3542,6 +3432,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-109", 0 ],
+									"source" : [ "obj-77", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
 									"source" : [ "obj-8", 0 ]
 								}
@@ -3845,8 +3742,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "TH-Köln-logo-small.png",
-				"bootpath" : "~/Documents/Max 8/Packages/IVES/externals",
-				"patcherrelativepath" : "../externals",
+				"bootpath" : "~/Documents/Max 8/Packages/IVES-main/externals",
+				"patcherrelativepath" : "../../externals",
 				"type" : "PNG",
 				"implicit" : 1
 			}

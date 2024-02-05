@@ -232,11 +232,11 @@ class Agent{
 	if(output == 0){
 		Max.outlet("/source/"+this.id+"/xyz "+this.position.x+" "+(this.position.z * -1)+" "+this.position.y);
 	}else{
-		Max.outlet("/shape/pos/x "+this.position.x);
-		Max.outlet("/shape/pos/y "+this.position.y);
-		Max.outlet("/shape/pos/z "+this.position.z);
-		Max.outlet("/shape/rot/y "+ phi * (180.0 / Math.PI));
-		Max.outlet("/shape/rot/x "+ (theta * (180.0 / Math.PI)));
+		Max.outlet("/object/pos/x "+this.position.x);
+		Max.outlet("/object/pos/y "+this.position.y);
+		Max.outlet("/object/pos/z "+this.position.z);
+		Max.outlet("/object/rot/y "+ phi * (180.0 / Math.PI));
+		Max.outlet("/object/rot/x "+ (theta * (180.0 / Math.PI)));
 	}
 
   }
